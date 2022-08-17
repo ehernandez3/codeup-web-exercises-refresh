@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML and CSS: HTML Elements</title>
+    </head>
+    <body>
+
+
+        <!-- Block-Level Element <div> --> <br><br><hr><br>
+        <div>This is a div</div>
+
+
+        <!-- Inline Element <span> --> <br><br><hr><br>
+        <p>Look, we have an amazing <span>inline</span> element.</p>
+
+
+        <!-- Void Elements <br>, <input>, etc. --> <br><br><hr><br>
+        <!-- Note that void elements can end with a /, but it is not required. -->
+        <br>
+        <input type="text" name="username" />
+
+
+        <!-- ATTRIBUTES --> <br><br><hr><br>
+        <!-- specified inside of the opening tag for an element,
+            and consist of a name, an = sign, and a value inside of double quotes ("").
+            ie. id="wrapper" . Multiple attributes are separated by spaces.
+        -->
+        <div id="wrapper">
+            content
+        </div>
+
+
+        <!-- COMMON HTML ELEMENTS -->
+            <!-- HEADINGS --> <br><br><hr><br>
+            <h1>I am the maing heading for the page</h1>
+            <h2>I am another heading, but less important</h2>
+            <h6>I am the least important heading</h6>
+            <!-- Block level element. -->
+            <!-- 6 levels designating importance, h1 through h6. -->
+
+
+            <!-- PARAGRAPHS --> <br><br><hr><br>
+            <p>This is a paragraph.</p>
+            <!-- Block level element. -->
+            <!-- Define a paragraph. -->
+
+
+            <!-- LINE BREAKS AND HORIZONTAL RULES -->
+            <br>
+            <hr>
+            <!-- Block-level, void elements. --> <br><br><hr><br>
+            <!-- Both create a line break in the document, hrs do so with a horizontal line. -->
+
+
+            <!-- STRONG AND EMPHASIS --> <br><br><hr><br>
+            <p>Understanding HTML is <em>really</em> <strong>important</strong>!</p>
+            <!-- Inline elements. -->
+            <!-- Draw attention to, and indicate importance of, their content. -->
+            <!-- By default, the contents of strong tags are bolded, and the contents of em tags are italicized. -->
+
+
+            <!-- NESTING ELEMENTS --> <br><br><hr><br>
+            <p>Understanding HTML is <em><strong>really important</strong></em>!</p>
+            <!-- Sometimes we can combine elements by nesting. -->
+            <!-- By default, the example above will bold and italicize the contents within the em and strong tag. -->
+
+
+            <!-- LISTS --> <br><br><hr><br>
+            <ul>
+                <li>This list</li>
+                <li>is bulleted</li>
+            </ul>
+            <ol>
+                <li>This list</li>
+                <li>is numbered</li>
+            </ol>
+            <!-- Block level elements. -->
+            <!-- Two types, ordered (ol) and unordered (ul). -->
+            <!-- Contents should be list items, that is, li elements. -->
+
+
+            <!-- ANCHORS --> <br><br><hr><br>
+            <h1 id="top">Top of the page</h1>
+            ...
+            <a href="http://google.com">Go to Google!</a>
+            <a href="http://google.com">Visit google in a new tab / window.</a>
+            <a href="#top">Go to the top of the page</a>
+            <!-- Inline element. -->
+            <!-- Hyperlinks to other pages, or locations within the current page. -->
+            <!-- Contents (including nested elements) will follow the link when clicked. -->
+            <!-- href attribute's value is the location to navigate to. -->
+            <!-- target attribute can specify how a link is opened. -->
+            <!-- Can link to individual elements by specifying the id of the element preceded by a #. -->
+
+
+            
+            <!-- IMAGES --> <br><br><hr><br>
+            <img src="img/example.png" alt="Example Image">
+            <img src="https://www.google.com/images/srpr/logo1w.png" alt="Hotlinked Google Logo">
+            <!-- Inline, void element. -->
+            <!-- Displays an image. -->
+            <!-- src attribute specifies the url of the image. -->
+            <!-- alt attribute specifies alternate text. -->
+            <!-- Hotlinking is the practice of using an image that is hosted on an external domain, and should be avoided. -->
+
+
+            <!-- TABLES --> <br><br><hr><br>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>$2.99</td>
+                </tr>
+                <tr>
+                    <td>Hamburger and French Fries</td>
+                    <td>$11.99</td>
+                </tr>
+            </table>
+            <!-- Used to display tabular data (not for layout). -->
+            <!-- Consist of table rows (tr elements). -->
+            <!-- Table rows consist of either table headings, th, or table cells, td elements. -->
+
+
+
+        <!-- HTML FOR PAGE LAYOUTS --> <br><br><hr><br>
+            <!-- <header>. Defines a header for a document or a section. -->
+            <!-- <nav>. Defines a container for navigation links. -->
+            <!-- <main>. The main content area consists of content that is directly related to the central topic of a document. -->
+            <!-- <article>. Defines an independent self-contained article. -->
+            <!-- <section>. Defines a section in a document. -->
+            <!-- <aside>. Defines content aside from the content (like a sidebar). -->
+            <!-- <footer>. Defines a footer for a document or a section. -->
+            <header>
+                Generally an image of the product/logo with a call to action, like subscribing or signing up.
+            </header>
+            <nav>
+                Usually an unordered list with links to the main pages of the site or application
+            </nav>
+            <main>
+                <section class="pricing-plans">
+                    Sometimes a description of the pricing plans for the product
+                </section>
+                <article>
+                    The description of the product/service/application
+                </article>
+            </main>
+            <aside>
+                A secondary navigation element or ads are common in this place
+            </aside>
+            <footer>
+                Secondary links and copyright notices
+            </footer>
+
+
+
+    </body>
+</html>
