@@ -7,44 +7,36 @@
     <title>Register With Us</title>
 </head>
 <body>
-    <h2>Register With Us</h2>
-    <form method="POST" action="https://request-inspector.glitch.me/">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="email">
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="password">
-        <br><br>
-        <label for="bio">BIO</label>
-        <br>
-        <textarea name="bio" id="bio" placeholder="Short description about yourself" cols="30" rows="10"></textarea>
-        <br><br>
-        <h3>How did you hear about us?</h3>
-        <label for="billboard">
-            <input id="billboard" type="radio" name="source" value="billboard">billboard
-        </label>
-        <label for="radio">
-            <input id="radio" type="radio" name="source" value="radio">radio ad
-        </label>
-        <label for="internet">
-            <input id="internet" type="radio" name="source" value="internet">internet ad
-        </label>
-        <label for="other">
-            <input id="other" type="radio" name="source" value="other">other
-        </label>
-        <br><br><br>
-        <label for="browser">What web broswer are you using?</label>
-        <select name="broswer" id="browser">
-            <option selected disabled>Select</option>
-            <option value="chrome">Chrome</option>
-            <option value="fire-fox">Fire Fox</option>
-            <option value="iexplorer">Internet Explorer</option>
-            <option value="safari">Safari</option>
-            <option value="other">Other</option>
-        </select>
-        <br><br>
-        <button type="submit">Submit</button>
-    </form>
-    
+    <main>
+        <h2>Register With Us</h2>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="email"><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password"><br><br>
+
+            <label for="bio">BIO</label><br>
+            <textarea name="bio" id="bio" placeholder="Short description about yourself" cols="30" rows="10"></textarea><br><br>
+            
+            <h3>How did you hear about us?</h3>
+            <label for="billboard"><input id="billboard" type="radio" name="source" value="billboard">billboard</label>
+            <label for="radio"><input id="radio" type="radio" name="source" value="radio">radio ad</label>
+            <label for="internet"><input id="internet" type="radio" name="source" value="internet">internet ad</label>
+            <label for="other"><input id="other" type="radio" name="source" value="other">other</label><br><br><br>
+
+            <label for="browser">What web broswer are you using?</label>
+            <select name="broswer" id="browser">
+                <option selected disabled>Select</option>
+                <option value="chrome">Chrome</option>
+                <option value="fire-fox">Fire Fox</option>
+                <option value="iexplorer">Internet Explorer</option>
+                <option value="safari">Safari</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
