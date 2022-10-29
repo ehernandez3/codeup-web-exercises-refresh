@@ -8,5 +8,171 @@
 </head>
 <body>
     <h2>Intro to CSS</h2>
+    <br><hr>
+
+    <!-- ELEMENT STYLE ATTRIBUTE -->
+    <!-- 3 DIFFERENT WAYS TO APPLY CSS STYLES TO WEBPAGES -->
+
+            <!-- ELEMENT STYLE ATTRIBUTE -->
+            <h2>ELEMENT STYLE ATTRIBUTE</h2>
+
+<pre>
+<span>&lt;h1 style="color:blue;text-decoration:underline;"&gt;</span><span>Hello, CSS!</span><span>&lt;/h1&gt;</span>
+</pre>
+
+                    <h1 style="color:blue;text-decoration:underline;">Hello, CSS!</h1>
+                    <br><hr>
+
+                    <!-- One of several ways to apply styles to an element -->
+                    <!-- Least recommended methods -->
+                    <!-- Consists of multiple key:value pairs with a colon between the key and the value -->
+                    <!-- Key:value pairs are then separated by semicolons -->
+
+            <!-- INLINE/EMBEDDED STYLESHEET -->
+            <h2>INLINE/EMBEDED STYLESHEET</h2>
+          
+<pre>
+<span>&lt;!DOCTYPE html&gt;</span>
+<span>&lt;html&gt;</span>
+<span>&lt;head&gt;</span>
+    <span>&lt;title&gt;</span>
+    <span>&lt;style&gt;</span>
+        <span>.fancy-header {</span>
+            <span>color: blue;</span>
+            <span>text-decoration: underline;</span>
+        <span>}</span>
+    <span>&lt;/style&gt;</span>
+<span>&lt;/head&gt;</span>
+<span>&lt;body&gt;</span>
+    <span>&lt;h1 class="fancy-header"&gt;</span><span>I've got style</span><span>&lt;/h1&gt;</span>
+<span>&lt;/body&gt;</span>
+<span>&lt;/html&gt;</span>
+</pre>
+
+                    <!-- Another method of addidng style is via embedded stylesheet -->
+                    <!-- Accomplished by using a <style> element inside the <head> element -->
+                    <!-- Can add styling definitions within the <style> element -->
+                    <!-- Can add class attribute to elements that link to one of the defined styles -->
+
+                            <!-- EXAMPLE -->
+            
+                                    
+                                    <!DOCTYPE html>
+                                    <html>
+                                    <head>
+                                        <title>CSS Test Page</title>
+                                        <style>
+                                            .fancy-header {
+                                                color: blue;
+                                                text-decoration: underline;
+                                            }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <h1 class="fancy-header">I've got style!</h1>
+                                    </body>
+                                    </html> 
+                                    <br><hr>
+                                   
+
+                            <!-- In example above, <style> tag with style definitions was inclded in <head> 
+                                of HTML pageAnother method of addidng style is via embedded stylesheet -->
+                            <!-- Notice a class attribute was added to the <h1> 
+                                element that linked to one of the defined styles -->
+
+
+            <!-- EXTERNAL SHEET -->
+            <h2>EXTERNAL SHEET</h2>
+
+                    <!-- Linking to external sheet is the
+                        recommended way to add styles to a webpage -->
+
+                            <!-- this file is named "site.css" and is in a directory named "css" -->
+                                <!-- .fancy-header-2 {
+                                    color: red;
+                                    text-decoration: underline;
+                                } -->
+
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>CSS Test Page</title>
+                                <link rel="stylesheet" href="../css/site.css">
+                            </head>
+                            <body>
+                                <h1 class="fancy-header-2">I've got style!</h1>
+                            </body>
+                            </html>
+                            <br><hr>
+                            
+                    <!-- Link to external sheet using a <link> element -->
+                    <!-- Link element is a void element,
+                        meaning it has no content or closing tag -->
+                    <!-- Requires rel attribute should be
+                        specified with a value of "stylesheet" -->
+                    <!-- Requires href attribute with a value pointing 
+                        to the stylesheet we're wanting to inclued -->
+
+                    <!-- Using this method, fancy-header-2 style can be 
+                        used multiple times in multiple pages -->
+                    <!-- If you want to change what a fancy-header looks like,
+                        you only need to change it in one place and the update
+                        will take place anywhere it is used -->
+
+
+            <!-- COMMENTS -->
+
+                    <!-- Comments in CSS are started with a slash followed by an
+                        asterisk (/*), and ended with the same in reverse order, (*/). -->
+                    <!-- Same syntax is used for both single and multi-line comments -->
+
+                            <!-- 
+
+                                /*
+                                multi
+                                line
+                                comment
+                                */
+                                
+
+                                .fancy-header {
+                                    color: blue; /* single line comment */
+                                    text-decoration: underline;
+                                }
+
+                             -->
+
+
+            <!-- EXERCISES -->
+
+                    <!-- For this exercise, we will continue working with the welcome.html file.
+                        We will talk about the syntax of css selectors and properties in the next
+                        lesson, but for now, use the examples above to complete the exercise. 
+                
+                        1. Use a style attribute to set the font color of the h1 element to red.
+
+                        2. Add a class of "fancy-header" to your h1 element, and create an embedded
+                        stylesheet and based on the example above. What color is the h1 after creating
+                        the embedded stylesheet? Remove the style attribute from your h1 and view the 
+                        page again.
+                        
+                        3. Create a directory named css in your project. Within this directory,
+                        create a file named style.css, and include a link to it in your html document.
+
+                        4. Inside of style.css, copy the above css, but change to font color to purple.
+                        What color is the h1 after making this change? Remove your embedded stylesheet
+                        and view the page again.
+                        
+                        5. What do the above exercises tell you about the precedence of style attributes
+                        and embedded and external stylesheets?
+                        
+                        6. Remove any style attributes and embedded stylesheets. From this point forward,
+                        we will only be working with external stylesheets.
+                        
+                        7. Finally, commit the changes to your git repository, and push to GitHub.
+            
+                    -->
+ 
+            
 </body>
 </html>
