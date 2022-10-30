@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    padding: 2px;
+}
+.vision-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fancy-header {
+    color: purple;
+    text-decoration: underline;
+}
