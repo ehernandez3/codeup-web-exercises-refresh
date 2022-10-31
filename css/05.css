@@ -1,0 +1,26 @@
+#selector {
+    /* color: blue; */
+    margin-left: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 85%;
+
+}
+
+#selector span:first-child {
+    color: blue;
+}
+
+#selector span:nth-child(3), #selector span:nth-child(4) {
+    margin-left: 20px;
+    display: block;
+}
+
+.fancy-header {
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.extra-large {
+    font-size: 200px;
+}
+

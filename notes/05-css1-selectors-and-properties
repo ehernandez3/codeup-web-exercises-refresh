@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties and Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/05.css">
+</head>
+<body>
+
+    <h1>CSS Properties and Selectors</h1>
+    <hr><br>
+
+    <!-- BASIC SELECTORS -->
+    <h2>BASIC SELECTORS</h2>
+
+            <!-- 
+
+                selector {
+                    property1: value;
+                    property2: value;
+                }
+
+             -->
+
+            <!-- CSS selectors allow you to selectively apply styles
+                to specific elements or groups of elements -->
+            <!-- A style definition starts with a selector -->
+            <!-- Following the selector is an open and close curly brace -->
+            <!-- Inside the curly braces is a list of key:value pairs. -->
+            <!-- the key:value pairs have a colon between them,
+                and a semi-colon after them. -->
+            <!-- The key is the name of a CSS property, and the value
+                is the value of the property is being used. -->
+
+            <!-- 
+            -SELECTOR-      -SYNTAX-
+            Element         The name of the element
+            ID              The name of the id, preceded by a #
+            Class           The name of the class, preceded by a .
+            -->
+            <div id="selector">
+                <span>selector</span>
+                <span> {</span>
+                <span>property1: value;</span>
+                <span>property2: value;</span>
+                <span>}</span>
+            </div>
+            <br><br><hr><br>
+
+
+    <!-- MULTIPLE SELECTORS -->
+    <h2>MULTIPLE SELECTORS</h2>
+
+            <!-- If you would like to have multiple selectors have the
+                same style definition, you can separate the selectors
+                with commas as follows: -->
+
+                    <!-- 
+
+                        selector1, selector2 {
+                            property1: value;
+                            property2: value;
+                        }
+                        
+                     -->
+
+                    <div id="selector">
+                        <span>selector1, selector2</span>
+                        <span> {</span>
+                        <span>property1: value;</span>
+                        <span>property2: value;</span>
+                        <span>}</span>
+                    </div>
+                    <br><br><hr><br>
+    
+
+    <!-- COMBINING CLASSES -->
+    <h2>COMBINING CLASSES</h2>
+
+            <!-- Often times, you want an HTML element to have several
+                style classes applied. That can be accomplished as follows: -->
+                    <!-- 
+
+                        .fancy-header {
+                            color: blue;
+                        }
+                        .extra-large {
+                            font-size: 200px;
+                        }
+
+
+                        <h1 class="fancy-header extra-large">Header Text</h1>
+
+                    -->
+                
+                    <div id="selector">
+                        <span>.fancy-header</span>
+                        <span> {</span>
+                        <span>color: blue;</span>
+                        <span style="display: none;">property2: value;</span>
+                        <span>}</span>
+                    </div>
+
+                    <h1 class="fancy-header extra-large">Header Text</h1>
+
+                    <br><br><hr><br>
+
+                    <!-- In the example above, the h1 element receives styles
+                        from both the fancy-header and extra-large classes. -->
+
+
+    <!-- DESCENDENT SELECTOR -->
+    <h2>DESCENDENT SELECTOR</h2>
+
+            <!-- Often times, it is useful to apply style to an element or
+                group of elements based on their descendant relationship to
+                some parent element in the page. To create a descendent selector,
+                you first type the parent selector, followed by a space, followed
+                by the descendent selector. -->
+
+                        <!-- 
+                            
+                            #container h1 {
+                                color: blue;
+                            }
+                        
+                        -->
+
+                        <div id="selector">
+                            <span>#container h1</span>
+                            <span> {</span>
+                            <span>color: blue;</span>
+                            <span style="display: none;">property2: value;</span>
+                            <span>}</span>
+                        </div>
+
+                        <br><br><hr><br>
+
+            <!-- In this example, any h1 elements that are a descendant of the element
+                with the id of container will be blue. Other h1 elements that are not
+                a descendant of an element with id="container" will not receive the style. -->
+    
+    
+    <!-- DIRECT-CHILD SELECTOR -->
+    <h2>DIRECT-CHILD SELECTOR</h2>
+
+            <!-- The direct child selector is similar to the descendent selector except
+                that only direct children of the parent selector will receive the specified
+                style. For the direct-child selector a greater than symbol, >, is used in
+                place of the space from the descendent selector. -->
+
+                        <!-- 
+                            
+                            #container>h1 {
+                                color: blue;
+                            }
+                        
+                        -->
+
+                        <div id="selector">
+                            <span>#container>h1</span>
+                            <span> {</span>
+                            <span>color: blue;</span>
+                            <span style="display: none;">property2: value;</span>
+                            <span>}</span>
+                        </div>
+
+                        <br><br><hr><br>
+
+            <!-- In this example, only h1 elements that are direct children of the element
+                with the id of container will be blue. -->
+
+
+
+</body>
+</html>
